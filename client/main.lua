@@ -145,15 +145,15 @@ end
 
 function NotEnoughPoliceNotify()
     if NotifyType == 'qb' then
-		QBCore.Functions.Notify('Not Enough Police On Duty - Minimum Required: '..Config.CoreSetttings.PoliceRequired, "error", 2500)
+		QBCore.Functions.Notify('Not Enough Police On Duty - Minimum Required: '..Config.CoreSettings.PoliceRequired, "error", 2500)
 	elseif NotifyType == 'okok' then
-		exports['okokNotify']:Alert('Error!', 'Not Enough Police On Duty - Minimum Required: '..Config.CoreSetttings.PoliceRequired, 2500, 'error', true)
+		exports['okokNotify']:Alert('Error!', 'Not Enough Police On Duty - Minimum Required: '..Config.CoreSettings.PoliceRequired, 2500, 'error', true)
 	elseif NotifyType == 'mythic' then
-		exports['mythic_notify']:DoHudText('error', 'Not Enough Police On Duty - Minimum Required: '..Config.CoreSetttings.PoliceRequired)
+		exports['mythic_notify']:DoHudText('error', 'Not Enough Police On Duty - Minimum Required: '..Config.CoreSettings.PoliceRequired)
 	elseif NotifyType == 'boii' then
-		exports['boii_ui']:notify('Error!', 'Not Enough Police On Duty - Minimum Required: '..Config.CoreSetttings.PoliceRequired, 'error', 2500)
+		exports['boii_ui']:notify('Error!', 'Not Enough Police On Duty - Minimum Required: '..Config.CoreSettings.PoliceRequired, 'error', 2500)
 	elseif NotifyType == 'ox' then
-		lib.notify({ title = 'Error!', description = 'Not Enough Police On Duty - Minimum Required: '..Config.CoreSetttings.PoliceRequired, type = 'error' })
+		lib.notify({ title = 'Error!', description = 'Not Enough Police On Duty - Minimum Required: '..Config.CoreSettings.PoliceRequired, type = 'error' })
 	end
 end
 
